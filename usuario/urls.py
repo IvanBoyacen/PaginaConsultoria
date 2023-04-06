@@ -1,8 +1,8 @@
 from django.urls import path
-from usuario.views import usuario
+from usuario.views import usuarios
 
 urlpatterns = [
     
-path( '',usuario,name="usuarios"),
+path( '',usuarios,name="Usuarios"),
 
 ]

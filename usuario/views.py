@@ -1,5 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
-def usuario(request):
-    return render(request, 'usuario/usuario.html')
+def usuarios(request):
+    titulo = "Usuarios"
+    context = {
+        'titulo': titulo,
+        'usuarios': usuarios
+    }
+    return render(request, 'usuario/usuarios.html', context)
 
