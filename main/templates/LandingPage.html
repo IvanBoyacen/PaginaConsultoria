@@ -1,0 +1,72 @@
+{% load static %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <title>Mattnaf Inicio</title>
+</head>
+<body class="body-LDPAGE">
+    <div class="container">
+        <!-- Sección 1: Navbar -->
+        <header>
+            <nav>
+                <div class="logo">
+                    <!--logo -->
+                </div>
+                <ul class="navbar">
+                    <li><a href="#quienes-somos">¿Quiénes somos?</a></li>
+                    <li><a href="#servicios">¿Qué servicios prestamos?</a></li>
+                    <li><a href="#contacto">Contáctanos</a></li>
+                </ul>
+                <a href="{% url 'login' %}" class="login-link"><button class="login-button">Iniciar Sesión</button></a>
+            </nav>
+        </header>
+
+        <!-- Sección 2: ¿Quiénes somos? -->
+        <section id="quienes-somos">
+            <h2>¿Quiénes somos?</h2>
+            <p> descripción sobre la empresa </p>
+        </section>
+
+        <!-- Sección 3: ¿Qué servicios prestamos? -->
+        <section id="servicios">
+            <h2>¿Qué servicios prestamos?</h2>
+            <p>descripción sobre los servicios de la empresa.</p>
+        </section>
+
+        <!-- Sección 4: Formulario de contacto -->
+        <section id="contacto">
+            <h2>Formulario de Contacto</h2>
+            <form>
+                <label for="nombre">Nombre/Empresa:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="telefono">Teléfono de contacto:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+
+        <!-- Sección 5: Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+              <p> información de contacto</p>
+            </div>
+            <div class="footer-bottom">
+              <p>Derechos de Autor &copy; 2023 | Mattnaf</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+
+
+{% endblock %}

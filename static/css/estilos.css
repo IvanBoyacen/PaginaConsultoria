@@ -1,0 +1,191 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#perfil {
+  position: 450px 2;
+}
+
+.gradient-custom-2 {
+  /* fallback for old browsers */
+  background: #33C4FF;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #2669bb, #2669bb, #2b95ca, #2b95ca);
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #2669bb, #2669bb, #2b95ca, #2b95ca);
+}
+
+@media (min-width: 768px) {
+  .gradient-form {
+    height: 100vh !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .gradient-custom-2 {
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+  }
+}
+  
+      
+.carousel-lg {
+  width: 100%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+ #contenedor-contacto {
+        border-radius: 10px;
+        box-shadow: 
+          0 0 0 1px rgba(255, 255, 255, 0.1),
+          0 2px 2px rgba(0, 0, 0, 0.1),
+          0 4px 4px rgba(0, 0, 0, 0.1),
+          0 8px 8px rgba(0, 0, 0, 0.1),
+          0 16px 16px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+      }
+ 
+/* Estilos para el body con nombre body-LDPAGE */
+.body-LDPAGE {
+  padding: 20px;
+}
+
+@media (min-width: 480px) {
+  .body-LDPAGE {
+    padding: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .body-LDPAGE {
+    padding: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .body-LDPAGE {
+    padding: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .body-LDPAGE {
+    padding: 60px;
+  }
+}
+
+/* Estilos para la navegación */
+nav {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+.navbar li {
+  margin-right: 20px;
+}
+
+.logo {
+  /* Estilos para tu logo */
+}
+
+.login-button {
+  /* Estilos para el botón de inicio de sesión */
+}
+
+/* Estilos para las secciones */
+section {
+  padding: 50px;
+}
+
+section h2 {
+  font-size: 24px;
+}
+
+/* Estilos para el formulario de contacto */
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilos para el footer */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+  min-height: 100vh; /* Establece el tamaño mínimo del contenedor al 100% del viewport height */
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.content {
+  flex: 1;
+  padding-bottom: 100px; /* Ajusta este valor según la altura de tu footer */
+}
+
+
+.footer {
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+}
+

@@ -19,16 +19,23 @@ from django.conf import settings
 from django.contrib.auth.views import LoginView as login
 from django.urls import path, include
 from main.views import principal
-
+from .views import ResetPasswordView
+from .views import formulario_contacto
+from .views import Matnaftblog
 from . import views
 
 urlpatterns = [
-    path('', login.as_view(), name='inicio'),
+    path('admin/', admin.site.urls),
+    path('', views.index, name='index'),
     path('login/', views.login_view, name='login'),
-    path('logout/', views.logout_view, name='logout'),    
+    path('logout/', views.logout_view, name='logout'),
+    path('reset-password/', ResetPasswordView.as_view(), name='reset_password'),
+    path('formulario-contacto/', formulario_contacto, name='contacto'),  
+    path('Matnaf-blog/',Matnaftblog , name='Matnaf-blog'),    
     path('principal/', principal, name='principal'),
     path('usuario/', include ('usuario.urls')),
-
+    path('incidentes/', include ('incidente.urls')),
+    
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

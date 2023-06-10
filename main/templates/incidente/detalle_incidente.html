@@ -1,0 +1,21 @@
+{% extends 'partials/body.html' %}`
+
+{% load static %}
+
+{% block contenido %}
+
+
+
+  <title>Detalle del Incidente</title>
+  <h1>Detalle del Incidente</h1>
+  <h2>{{ incidente.titulo }}</h2>
+  <p>Cliente: {{ incidente.cliente }}</p>
+  <p>Reportado por: {{ incidente.reportado_por }}</p>
+  <p>Consultor: {{ incidente.consultor }}</p>
+  <p>Estado: {{ incidente.get_estado_display }}</p>
+  <p>Prioridad: {{ incidente.get_prioridad_display }}</p>
+  <p>Fecha de creación: {{ incidente.fecha_creacion }}</p>
+  <p>Sección de texto: {{ incidente.seccion_texto }}</p>
+  <p>Adjunto: <a href="{{ incidente.adjunto.url }}">{{ incidente.adjunto.name }}</a></p>
+
+  {% endblock contenido %}

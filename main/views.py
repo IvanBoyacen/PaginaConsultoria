@@ -4,8 +4,11 @@ from django.contrib import messages
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login
 from django.contrib.auth import logout
+from django.views import View
 
 
+def index(request):
+    return render(request, 'LandingPage.html')
 
 def login_view(request):
     return render(request, 'registration/login.html')
@@ -41,3 +44,13 @@ def principal(request):
         'titulo':titulo
     }
     return render(request,'Menu.html',context)
+
+class ResetPasswordView(View):
+    def get(self, request, *args, **kwargs):
+        return render(request, 'registration/forgotPassword.html')
+    
+def formulario_contacto(request):
+    return render(request, 'contacto.html')
+
+def Matnaftblog(request):
+    return render(request, 'LandingPage.html')
